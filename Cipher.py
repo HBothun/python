@@ -4,7 +4,7 @@ from PIL import Image, ImageTk
 
 cipher = Tk()
 cipher.title('Cipher')
-cipher.iconbitmap('D:\VSCODE\Basics\GUI\Images\cipher.ico')
+cipher.iconbitmap('cipher.ico')
 cipher.configure(background='mediumpurple3')
 
 result= Text(cipher, 
