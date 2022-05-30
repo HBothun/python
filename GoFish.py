@@ -79,11 +79,11 @@ print('Dealing...')
 Players = Deal(Players, Deck)
 
 for Player in Players:
-    while len(Player.cards) > 0:
+    if len(Player.cards) >= 1:
         print(Player.name, 'its your turn.\nYou have', len(Player.cards), 'cards:')
         for card in Player.cards:
             print(card.rank, card.suit)
-        if Player.cards.count(card) > 1:
+        if Player.cards.count(card) >= 2:
             print('You have a pair of', card.rank, card.suit + 's')
             Player.pairs += 1
             Player.cards.remove(card)
